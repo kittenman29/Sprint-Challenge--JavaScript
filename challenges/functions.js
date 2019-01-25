@@ -45,7 +45,7 @@ function greeting(firstName, lastName) {
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: Because it is a child of the parent function which means it's within the closure and scope of the parent.
+// Explanation: Because it is a child of the parent class which means it's within the closure and scope of the parent.
 
 
 const external = "I'm outside the function";

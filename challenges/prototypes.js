@@ -17,10 +17,8 @@ function CuboidMaker(attributes) {
   
   Formula for cuboid volume: length * width * height
 */
-CuboidMaker.prototype.volume = function sum() {
-  for(let i=0; i<cuboid.length; i++) {
-    sum = (this.width*this.length*this.height);
-  };
+CuboidMaker.prototype.volume = function() {
+  sum = (this.width*this.length*this.height);
   return sum;
 }
 
@@ -30,10 +28,8 @@ CuboidMaker.prototype.volume = function sum() {
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 CuboidMaker.prototype.surfaceArea = function() {
-  for(let i=0; i<attributes.length; i++) {
-    sum = 2*(this.width*this.length*this.height);
-  };
-  return sum;
+    sum = 2*(this.width*this.length + this.width*this.height + this.length*this.height);
+    return sum;
 }
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
